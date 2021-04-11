@@ -24,7 +24,9 @@ b : False
 
 
 The second problem solution located in `Timer` project.
-To build runnable use `./gradlew build`, to run execute `build/scripts/Timer`.
+
+To run the application use `./gradlew run`. 
+
 The program reads the path to the python executable and runs `$path -m timeit -r 10` command.
 While the command is being executed, the number of seconds from the start of execution is printed.
 

@@ -12,10 +12,6 @@ repositories {
     mavenCentral()
 }
 
-dependencies {
-    runtimeOnly(files("build/classes/kotlin/main"))
-}
-
 tasks.test {
     useJUnitPlatform()
 }
@@ -24,6 +20,10 @@ tasks.withType<KotlinCompile>() {
     kotlinOptions.jvmTarget = "1.8"
 }
 
+tasks.getByName<JavaExec>("run") {
+    standardInput = System.`in`
+}
+
 application {
-    mainClassName = "com.test.task.MainKt"
+    mainClass.set("com.test.task.MainKt")
 }
