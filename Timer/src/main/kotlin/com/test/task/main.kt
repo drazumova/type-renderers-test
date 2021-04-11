@@ -10,7 +10,7 @@ fun main() {
     val executor = ScheduledThreadPoolExecutor(1)
     var counter = 0
     val future = executor.scheduleAtFixedRate({
-        println(counter)
+        println("Seconds since start: $counter")
         counter += 1
     }, 0, 1, TimeUnit.SECONDS)
 
