@@ -38,10 +38,10 @@ Enter python executable path: /usr/bin/python3
 
 Output:
 ```
-0
-1
-2
-3
+Seconds since start: 0
+Seconds since start: 1
+Seconds since start: 2
+Seconds since start: 3
 OUTPUT:
 50000000 loops, best of 10: 5.8 nsec per loop
 ```
